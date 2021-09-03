@@ -18,6 +18,8 @@
 		3194A63226E1DEED0071E638 /* BobaFetch in Frameworks */ = {isa = PBXBuildFile; productRef = 3194A63126E1DEED0071E638 /* BobaFetch */; };
 		3194A64726E28A520071E638 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A64526E28A520071E638 /* RecordTableViewCell.swift */; };
 		3194A64826E28A520071E638 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3194A64626E28A520071E638 /* RecordTableViewCell.xib */; };
+		3194A64A26E2C8180071E638 /* PlanetsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A64926E2C8180071E638 /* PlanetsMapper.swift */; };
+		3194A64C26E2C82B0071E638 /* FilmsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A64B26E2C82B0071E638 /* FilmsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		3194A62D26E1DB920071E638 /* PresentationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationRecord.swift; sourceTree = "<group>"; };
 		3194A64526E28A520071E638 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		3194A64626E28A520071E638 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
+		3194A64926E2C8180071E638 /* PlanetsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsMapper.swift; sourceTree = "<group>"; };
+		3194A64B26E2C82B0071E638 /* FilmsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,6 @@
 				3194A62626E1DB420071E638 /* Mappers */,
 				3194A5DE26E1CE870071E638 /* AppDelegate.swift */,
 				3194A5E026E1CE870071E638 /* SceneDelegate.swift */,
-				3194A5E226E1CE870071E638 /* ViewController.swift */,
 				3194A5E426E1CE870071E638 /* Main.storyboard */,
 				3194A5E726E1CE890071E638 /* Assets.xcassets */,
 				3194A5E926E1CE890071E638 /* LaunchScreen.storyboard */,
@@ -84,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				3194A62726E1DB510071E638 /* EyesMapper.swift */,
+				3194A64926E2C8180071E638 /* PlanetsMapper.swift */,
+				3194A64B26E2C82B0071E638 /* FilmsMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 		3194A64426E28A350071E638 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3194A5E226E1CE870071E638 /* ViewController.swift */,
 				3194A64526E28A520071E638 /* RecordTableViewCell.swift */,
 				3194A64626E28A520071E638 /* RecordTableViewCell.xib */,
 			);
@@ -191,8 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3194A5E326E1CE870071E638 /* ViewController.swift in Sources */,
+				3194A64A26E2C8180071E638 /* PlanetsMapper.swift in Sources */,
 				3194A5DF26E1CE870071E638 /* AppDelegate.swift in Sources */,
 				3194A64726E28A520071E638 /* RecordTableViewCell.swift in Sources */,
+				3194A64C26E2C82B0071E638 /* FilmsMapper.swift in Sources */,
 				3194A62826E1DB510071E638 /* EyesMapper.swift in Sources */,
 				3194A5E126E1CE870071E638 /* SceneDelegate.swift in Sources */,
 				3194A62E26E1DB920071E638 /* PresentationRecord.swift in Sources */,

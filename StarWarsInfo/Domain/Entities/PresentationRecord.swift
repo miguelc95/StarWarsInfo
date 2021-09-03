@@ -7,6 +7,12 @@
 
 import Foundation
 
+enum Category: Int, CaseIterable {
+    case People
+    case Planets
+    case Films
+}
+
 struct PresentationRecord {
     let title: String
     let detail: String

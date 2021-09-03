@@ -16,22 +16,3 @@ extension Eyes {
                            type: .People)
     }
 }
-
-extension Film {
-    func mapToPresentation() -> PresentationRecord {
-        PresentationRecord(title: title,
-                           detail: openingCrawl,
-                           subtitle: releaseDate,
-                           type: .Films)
-    }
-}
-
-extension Planet {
-    func mapToPresentation() -> PresentationRecord {
-        PresentationRecord(title: name,
-                           detail: climate,
-                           subtitle: population,
-                           type: .Planets)
-    }
-}
-

@@ -8,12 +8,6 @@
 import UIKit
 import BobaFetch
 
-enum Category: Int, CaseIterable {
-    case People
-    case Planets
-    case Films
-}
-
 class ViewController: UIViewController {
     
     private let searchController = UISearchController(searchResultsController: nil)
