@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		3194A5E626E1CE870071E638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5E426E1CE870071E638 /* Main.storyboard */; };
 		3194A5E826E1CE890071E638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5E726E1CE890071E638 /* Assets.xcassets */; };
 		3194A5EB26E1CE890071E638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5E926E1CE890071E638 /* LaunchScreen.storyboard */; };
+		3194A62826E1DB510071E638 /* EyesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A62726E1DB510071E638 /* EyesMapper.swift */; };
+		3194A62E26E1DB920071E638 /* PresentationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A62D26E1DB920071E638 /* PresentationRecord.swift */; };
+		3194A63226E1DEED0071E638 /* BobaFetch in Frameworks */ = {isa = PBXBuildFile; productRef = 3194A63126E1DEED0071E638 /* BobaFetch */; };
+		3194A64726E28A520071E638 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A64526E28A520071E638 /* RecordTableViewCell.swift */; };
+		3194A64826E28A520071E638 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3194A64626E28A520071E638 /* RecordTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		3194A5E726E1CE890071E638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3194A5EA26E1CE890071E638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3194A5EC26E1CE890071E638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3194A62726E1DB510071E638 /* EyesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesMapper.swift; sourceTree = "<group>"; };
+		3194A62D26E1DB920071E638 /* PresentationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationRecord.swift; sourceTree = "<group>"; };
+		3194A64526E28A520071E638 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		3194A64626E28A520071E638 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3194A63226E1DEED0071E638 /* BobaFetch in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,9 @@
 		3194A5DD26E1CE870071E638 /* StarWarsInfo */ = {
 			isa = PBXGroup;
 			children = (
+				3194A64426E28A350071E638 /* Presentation */,
+				3194A62B26E1DB6D0071E638 /* Domain */,
+				3194A62626E1DB420071E638 /* Mappers */,
 				3194A5DE26E1CE870071E638 /* AppDelegate.swift */,
 				3194A5E026E1CE870071E638 /* SceneDelegate.swift */,
 				3194A5E226E1CE870071E638 /* ViewController.swift */,
@@ -65,6 +78,39 @@
 				3194A5EC26E1CE890071E638 /* Info.plist */,
 			);
 			path = StarWarsInfo;
+			sourceTree = "<group>";
+		};
+		3194A62626E1DB420071E638 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				3194A62726E1DB510071E638 /* EyesMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		3194A62B26E1DB6D0071E638 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3194A62C26E1DB840071E638 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3194A62C26E1DB840071E638 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3194A62D26E1DB920071E638 /* PresentationRecord.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3194A64426E28A350071E638 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3194A64526E28A520071E638 /* RecordTableViewCell.swift */,
+				3194A64626E28A520071E638 /* RecordTableViewCell.xib */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,9 @@
 			dependencies = (
 			);
 			name = StarWarsInfo;
+			packageProductDependencies = (
+				3194A63126E1DEED0071E638 /* BobaFetch */,
+			);
 			productName = StarWarsInfo;
 			productReference = 3194A5DB26E1CE870071E638 /* StarWarsInfo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +159,9 @@
 				Base,
 			);
 			mainGroup = 3194A5D226E1CE870071E638;
+			packageReferences = (
+				3194A63026E1DEED0071E638 /* XCRemoteSwiftPackageReference "BobaFetch" */,
+			);
 			productRefGroup = 3194A5DC26E1CE870071E638 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +178,7 @@
 			files = (
 				3194A5EB26E1CE890071E638 /* LaunchScreen.storyboard in Resources */,
 				3194A5E826E1CE890071E638 /* Assets.xcassets in Resources */,
+				3194A64826E28A520071E638 /* RecordTableViewCell.xib in Resources */,
 				3194A5E626E1CE870071E638 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +192,10 @@
 			files = (
 				3194A5E326E1CE870071E638 /* ViewController.swift in Sources */,
 				3194A5DF26E1CE870071E638 /* AppDelegate.swift in Sources */,
+				3194A64726E28A520071E638 /* RecordTableViewCell.swift in Sources */,
+				3194A62826E1DB510071E638 /* EyesMapper.swift in Sources */,
 				3194A5E126E1CE870071E638 /* SceneDelegate.swift in Sources */,
+				3194A62E26E1DB920071E638 /* PresentationRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +397,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3194A63026E1DEED0071E638 /* XCRemoteSwiftPackageReference "BobaFetch" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/miguelc95/BobaFetch";
+			requirement = {
+				branch = development;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3194A63126E1DEED0071E638 /* BobaFetch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3194A63026E1DEED0071E638 /* XCRemoteSwiftPackageReference "BobaFetch" */;
+			productName = BobaFetch;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3194A5D326E1CE870071E638 /* Project object */;
 }

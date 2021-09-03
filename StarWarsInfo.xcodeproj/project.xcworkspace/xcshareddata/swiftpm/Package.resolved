@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BobaFetch",
+        "repositoryURL": "https://github.com/miguelc95/BobaFetch",
+        "state": {
+          "branch": "development",
+          "revision": "19852cd8db4f9ca6da0a17c08d0bcfc1656ce07b",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
