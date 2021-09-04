@@ -33,8 +33,7 @@ class RecordTableViewCell: UITableViewCell {
         case .Planets:
             recordImageView.image = UIImage(systemName: "map")
             detailLbl.text = "Population: \(record.subtitle)"
-
+            
         }
     }
-    
 }

@@ -20,6 +20,7 @@
 		3194A64826E28A520071E638 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3194A64626E28A520071E638 /* RecordTableViewCell.xib */; };
 		3194A64A26E2C8180071E638 /* PlanetsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A64926E2C8180071E638 /* PlanetsMapper.swift */; };
 		3194A64C26E2C82B0071E638 /* FilmsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A64B26E2C82B0071E638 /* FilmsMapper.swift */; };
+		3194A64F26E2F01A0071E638 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A64E26E2F01A0071E638 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		3194A64626E28A520071E638 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
 		3194A64926E2C8180071E638 /* PlanetsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsMapper.swift; sourceTree = "<group>"; };
 		3194A64B26E2C82B0071E638 /* FilmsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsMapper.swift; sourceTree = "<group>"; };
+		3194A64E26E2F01A0071E638 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		3194A5DD26E1CE870071E638 /* StarWarsInfo */ = {
 			isa = PBXGroup;
 			children = (
+				3194A64D26E2F0100071E638 /* Service */,
 				3194A64426E28A350071E638 /* Presentation */,
 				3194A62B26E1DB6D0071E638 /* Domain */,
 				3194A62626E1DB420071E638 /* Mappers */,
@@ -117,6 +120,14 @@
 				3194A64626E28A520071E638 /* RecordTableViewCell.xib */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3194A64D26E2F0100071E638 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3194A64E26E2F01A0071E638 /* Extensions.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3194A5E326E1CE870071E638 /* ViewController.swift in Sources */,
+				3194A64F26E2F01A0071E638 /* Extensions.swift in Sources */,
 				3194A64A26E2C8180071E638 /* PlanetsMapper.swift in Sources */,
 				3194A5DF26E1CE870071E638 /* AppDelegate.swift in Sources */,
 				3194A64726E28A520071E638 /* RecordTableViewCell.swift in Sources */,

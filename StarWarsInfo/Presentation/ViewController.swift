@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var categoriesSegmentedControl: UISegmentedControl!
     @IBOutlet weak var recordsTableView: UITableView!
     var activityIndicator = UIActivityIndicatorView(style: .large)
-
+    
     var data =  [Category.People: [PresentationRecord](),
                  Category.Planets: [PresentationRecord](),
                  Category.Films: [PresentationRecord]()]
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         recordsTableView.dataSource = self
         let nib = UINib(nibName: "RecordTableViewCell", bundle: nil)
         recordsTableView.register(nib, forCellReuseIdentifier: "RecordCell")
-
+        
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search"
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
                     self?.data[.People] = eyes.compactMap { $0.mapToPresentation() }
                     self?.recordsTableView.reloadData()
                 case .failure(let error):
-                    print(error)
+                    self?.displayErrorMessage(error: error)
                 }
             }
         case .Films:
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
                     self?.data[.Films] = films.compactMap { $0.mapToPresentation() }
                     self?.recordsTableView.reloadData()
                 case .failure(let error):
-                    print(error)
+                    self?.displayErrorMessage(error: error)
                 }
             }
         case .Planets:
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
                     self?.data[.Planets] = planets.compactMap { $0.mapToPresentation() }
                     self?.recordsTableView.reloadData()
                 case .failure(let error):
-                    print(error)
+                    self?.displayErrorMessage(error: error)
                 }
             }
         }
@@ -93,6 +93,12 @@ class ViewController: UIViewController {
     
     private func stopIndicator() {
         activityIndicator.stopAnimating()
+    }
+    
+    private func displayErrorMessage(error: Error) {
+        DispatchQueue.main.async {
+            self.displayResponse(message: error.localizedDescription, title: "Error")
+        }
     }
 }
 
