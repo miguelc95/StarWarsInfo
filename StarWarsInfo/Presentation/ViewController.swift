@@ -95,9 +95,9 @@ class ViewController: UIViewController {
         activityIndicator.stopAnimating()
     }
     
-    private func displayErrorMessage(error: Error) {
+    private func displayErrorMessage(error: BobaFetchError) {
         DispatchQueue.main.async {
-            self.displayResponse(message: error.localizedDescription, title: "Error")
+            self.displayResponse(message: error.description, title: "Error")
         }
     }
 }
